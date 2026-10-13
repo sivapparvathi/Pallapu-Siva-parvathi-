@@ -5,7 +5,7 @@ if username.strip() == "":
     print("Invalid username: Username cannot contain only spaces.")
 elif len(username.strip()) < 5:
     print("Invalid username: Username must contain at least 5 characters.")
-elif username.lower() == "admin":
+elif username.strip().lower() == "admin":
     print("Invalid username: Admin username is not allowed.")
 else:
     print("Valid username.")
