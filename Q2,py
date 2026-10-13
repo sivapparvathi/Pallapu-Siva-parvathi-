@@ -34,3 +34,5 @@ print("Modified list:", marks)
 
 # List elements can be changed.
 # Tuple elements cannot be changed because tuples are immutable.
+# marks_tuple[0] = 80
+# Uncomment the above line to observe the TypeError.
