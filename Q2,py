@@ -1,0 +1,36 @@
+
+marks = [78, 35, 92, 40, 61]
+marks_tuple = tuple(marks)
+
+print("List:", marks)
+print("List data type:", type(marks))
+
+print("Tuple:", marks_tuple)
+print("Tuple data type:", type(marks_tuple))
+
+print("Highest marks:", max(marks))
+print("Lowest marks:", min(marks))
+
+count = (
+    (marks[0] >= 40) +
+    (marks[1] >= 40) +
+    (marks[2] >= 40) +
+    (marks[3] >= 40) +
+    (marks[4] >= 40)
+)
+print("Students scored at least 40:", count)
+
+valid = (
+    0 <= marks[0] <= 100 and
+    0 <= marks[1] <= 100 and
+    0 <= marks[2] <= 100 and
+    0 <= marks[3] <= 100 and
+    0 <= marks[4] <= 100
+)
+print("All marks are valid:", valid)
+
+marks[0] = 80
+print("Modified list:", marks)
+
+# List elements can be changed.
+# Tuple elements cannot be changed because tuples are immutable.
